@@ -1003,12 +1003,12 @@ Dashboard Zero */
 /* ---------------------------------
 Dashboard Attribution */
 
-.gh-dashboard-list-item-source {
+.gh-dashboard-list-item-sub {
     padding-left: 20px;
     position: relative;
 }
 
-.gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item-sub::after {
     content: "";
     width: 9px;
     height: 9px;
@@ -1020,23 +1020,23 @@ Dashboard Attribution */
     background: #E6E9EB;
 }
 
-.gh-dashboard-list-item:first-child .gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item:first-child .gh-dashboard-list-item-sub::after {
     background: #8e42ff;
 }
 
-.gh-dashboard-list-item:nth-child(2) .gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item:nth-child(2) .gh-dashboard-list-item-sub::after {
     background: #BB4AE5;
 }
 
-.gh-dashboard-list-item:nth-child(3) .gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item:nth-child(3) .gh-dashboard-list-item-sub::after {
     background: #DD97C9;
 }
 
-.gh-dashboard-list-item:nth-child(4) .gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item:nth-child(4) .gh-dashboard-list-item-sub::after {
     background: #E19A98;
 }
 
-.gh-dashboard-list-item:nth-child(5) .gh-dashboard-list-item-source::after {
+.gh-dashboard-list-item:nth-child(5) .gh-dashboard-list-item-sub::after {
     background: #F5C9C2;
 }
 
