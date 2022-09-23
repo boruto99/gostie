@@ -102,7 +102,10 @@ class MemberAttributionService {
         const attribution = this.attributionBuilder.build({
             id: memberCreatedEvent.get('attribution_id'),
             url: memberCreatedEvent.get('attribution_url'),
-            type: memberCreatedEvent.get('attribution_type')
+            type: memberCreatedEvent.get('attribution_type'),
+            refSource: memberCreatedEvent.get('referrer_source'),
+            refMedium: memberCreatedEvent.get('referrer_medium'),
+            refUrl: memberCreatedEvent.get('referrer_url')
         });
         return await attribution.fetchResource();
     }
@@ -120,7 +123,10 @@ class MemberAttributionService {
         const attribution = this.attributionBuilder.build({
             id: subscriptionCreatedEvent.get('attribution_id'),
             url: subscriptionCreatedEvent.get('attribution_url'),
-            type: subscriptionCreatedEvent.get('attribution_type')
+            type: subscriptionCreatedEvent.get('attribution_type'),
+            refSource: subscriptionCreatedEvent.get('referrer_source'),
+            refMedium: subscriptionCreatedEvent.get('referrer_medium'),
+            refUrl: subscriptionCreatedEvent.get('referrer_url')
         });
         return await attribution.fetchResource();
     }
